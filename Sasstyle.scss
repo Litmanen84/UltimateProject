@@ -32,7 +32,7 @@ body {
     padding-right: 130px;
     padding-bottom: 60px;
     background-image: url(assets/deco1.svg), url(assets/deco3\ 1.svg), url(assets/deco2.svg), url(assets/Ellipse\ 1.svg), url(assets/deco3\ 2.svg), linear-gradient(80deg, rgb(1, 6, 40) 0%, rgb(3, 21, 133) 90%);
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: top right, 6% 9%, 30% 20%, 78% 38%, 33% 59%, right;
 }
 
@@ -54,6 +54,10 @@ body {
 .menu-logo {
     display: flex;
     align-items: center;
+}
+
+.menu-burger {
+    display: none;
 }
 
 .menu-options {
@@ -100,7 +104,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.045;
     text-align: justify;
-    width: 380px;
+    width: 65%;
     line-height: 32px;
     color: rgba(239, 239, 239, 1)
 }
@@ -392,4 +396,171 @@ body {
     line-height: 32px;
     text-align: right;
     color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 600px) {
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            padding-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-position: top right, 6% 9%, 30% 20%, 78% 38%, 33% 59%, right;
+            
+            .main {
+                display: flex;
+                flex-direction: column;
+                grid-row-gap: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                box-sizing: border-box;
+                div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0px;
+                    p {
+                    width: 100%;
+                    }
+                }
+
+                img {
+                width: 100%w;
+                }
+
+                p {
+                width: 80vw;
+                }
+
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .menu-logo {
+                        align-items: flex-start;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .menu-burger {
+                        display: flex;
+                        align-items: end;
+                        i {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+
+                    .menu-options {
+                        display: none;
+                    }
+                }
+
+                .first-div {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    p {
+                        text-align: center;
+                    }
+                    .first-div-title {
+                        font-weight: bold;
+                    }
+                    .first-div-subt {
+                        font-size: 48px;
+                        font-weight: bold;
+                    }
+        
+                    .first-div-text {
+                        box-sizing: border-box;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        font-size: 32px;
+                        text-align: justify;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+        
+                    .buttons {
+                        .butt1, .butt2 {
+                            width: 60vw;
+                            height: 60px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+        
+                .second-div {
+                    p {
+                        text-align: center;
+                    }
+                    button {
+                        align-self: center;
+                    } 
+                }
+        
+                .third-div {
+                    display: flex;
+                    flex-direction: column;
+                    .third-div-box {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        
+        .last-div {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-top: 20px;
+            align-items: center;
+            .last-div-upper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                margin-top: 20px;
+                .last-div-logo {
+                    grid-row: 1;
+                    grid-column-start: span 2;
+                    justify-content: center;
+                }
+                .last-div-options {
+                    grid-row: 2;
+                    grid-template-columns: 0.5fr;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                .last-div-nav {
+                    grid-row: 3;
+                    grid-column-start: span 2;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+            }
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .last-div-endbar {
+                display: grid;
+                grid-template-columns: 1fr;
+                .copyright {
+                    grid-row: 1;
+                    text-align: center;
+                }
+                .useAndPolicy {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+}
 }
