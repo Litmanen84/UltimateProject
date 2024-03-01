@@ -402,7 +402,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-left: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -424,6 +423,10 @@ body {
   }
   body .main div p {
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   body .main img {
     width: 100% w;
